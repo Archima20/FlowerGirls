@@ -1,24 +1,21 @@
-* {
- 
+@font-face {
+    font-family: "Better Yesterday";
+    src: url(./src/fonts/Better\ Yesterday.otf); src: url(./src/fonts/Better\ Yesterday\ italic.otf)
 }
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap'); 
+:root{ 
+    --colorWhite:#FFFFFF;
+    --colorPaleOrange:#FFEDE0; 
+    --colorOrange:#FF7C19;
+    --colorPaleGray:#F5F5F5;
+    --colorDarkGray:#B6BCC8; 
+    --colorBlack: #000000;
+    --fontLetter1: "Better Yesterday";
+    --fontLetter2: 'Arvo', serif;
+    }
 
-header .navbar{
-    display: flex;
-    justify-content: space-between;
+*{ padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
 
-}
-
-main .banner{
-
-}
-
-<<<<<<< HEAD
-main .carnivor{
-=======
-main.carnivor{
->>>>>>> b35d5551255947ff86dc0c9ce0381ac64cbe1bc7
-    display: grid;
-    grid-template-rows: 180px, 180px;
-    1fr repeat(5);
-
-}
