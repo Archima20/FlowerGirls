@@ -1,0 +1,20 @@
+* {
+ 
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .banner{
+
+}
+
+main.carnivor{
+    display: grid;
+    grid-template-rows: 180px, 180px;
+    1fr repeat(5);
+
+}
