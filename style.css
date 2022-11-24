@@ -1,0 +1,24 @@
+* {
+ 
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .banner{
+
+}
+
+<<<<<<< HEAD
+main .carnivor{
+=======
+main.carnivor{
+>>>>>>> b35d5551255947ff86dc0c9ce0381ac64cbe1bc7
+    display: grid;
+    grid-template-rows: 180px, 180px;
+    1fr repeat(5);
+
+}
