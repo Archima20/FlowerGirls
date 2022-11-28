@@ -1,3 +1,7 @@
+
+@import url("./src/styles/header.css");
+@import url("./src/styles/main.css");
+
 @font-face {
     font-family: "Better Yesterday";
     src: url(./src/fonts/Better\ Yesterday.otf); src: url(./src/fonts/Better\ Yesterday\ italic.otf)
