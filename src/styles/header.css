@@ -3,30 +3,34 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 40px;
+    
 
 }
 
 .logo {
     font-family: var(--fontLetter1);
-    font-size: 128px;
+    font-size: 150px;
     font-weight: 400;
+
 }
 nav {
 
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 ul.navbar {
     display: flex;
     flex-direction: row;
-    gap: 29px;
+    gap: 100px;
     align-items: center;
     justify-content: center;
 
 }
 .navbar li {
     font-family: var(--fontLetter2);
-    font-size: 16px;
+    font-size: 24px;
     list-style: none;
     background-color: var(--colorPaleOrange);
     padding: 5px 10px;
@@ -36,5 +40,17 @@ ul.navbar {
 section.icons {
     display: flex;
     flex-direction: row;
-    
+    gap: 80px;
+
+}
+.user, .shopping-card {
+
+    background-color: var(--colorWhite);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
