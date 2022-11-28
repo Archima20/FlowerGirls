@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: var(--fontLetter1);
+    font-size: 128px;
+    font-weight: 400;
+}
+nav {
+
+    display: flex;
+    align-items: center;
+}
+ul.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar li {
+    font-family: var(--fontLetter2);
+    font-size: 16px;
+    list-style: none;
+    background-color: var(--colorPaleOrange);
+    padding: 5px 10px;
+    border-radius: 35px;
+    
+}
+section.icons {
+    display: flex;
+    flex-direction: row;
+    
+}
