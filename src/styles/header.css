@@ -3,54 +3,51 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 40px;
-    
-
-}
+    margin: 1.25rem 2.5rem;
+    }
 
 .logo {
     font-family: var(--fontLetter1);
-    font-size: 150px;
+    font-size: 15rem;
     font-weight: 400;
-
 }
-nav {
 
+nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
 ul.navbar {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 3.5rem;
     align-items: center;
     justify-content: center;
-
 }
+
 .navbar li {
     font-family: var(--fontLetter2);
-    font-size: 24px;
+    font-size: 3.5rem;
     list-style: none;
     background-color: var(--colorPaleOrange);
-    padding: 5px 10px;
-    border-radius: 35px;
-    
-}
+    padding: 0.3rem 2.4rem;
+    border-radius: 5rem;
+    }
+
 section.icons {
     display: flex;
     flex-direction: row;
-    gap: 80px;
-
+    gap: 3.5rem;
 }
-.user, .shopping-card {
 
+.user, .shopping-card {
     background-color: var(--colorWhite);
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 3rem;
 }
