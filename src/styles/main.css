@@ -1,0 +1,23 @@
+.banner {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.banner img {
+    height: 20rem;
+    width: 100%;
+
+}
+
+.f-carnivor{
+    display: flex;
+    justify-content: center;
+    
+    font-family: var(--fontLetter2);
+    font-size: 5rem;
+    font-weight: 400;
+    background-color: var(--colorPaleOrange);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    }
+
+    
