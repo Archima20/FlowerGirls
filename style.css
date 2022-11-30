@@ -1,6 +1,7 @@
 
 @import url("./src/styles/header.css");
 @import url("./src/styles/main.css");
+@import url("./src/styles/shoppingcar.css");
 
 @font-face {
     font-family: "Better Yesterday";

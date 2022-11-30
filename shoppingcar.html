@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Florecer | Carrito de compras</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Florecer</h1>
+        <nav>
+            <ul class="navbar">
+                 <li>Flores Carnivoras</li>
+                 <li>Flores Hidroponicas</li>
+                 <li>Quienes Somos</li>
+                 <li>Contacto</li>
+            </ul>
+        </nav> 
+        <section class="icons">
+            <div class="user"><i class="fa-solid fa-user"></i></div> 
+        </section>  
+    </header>
+    <main>
+        <section class="user-information">
+            <h3>Cliente</h3>
+            <div>
+                <p>Funeraría Perez</p>
+                <p>+34 612 345 678</p>
+                <button>Modificar</button>
+            </div>
+            <h3>Dirección de Entrega</h3>
+            <div>
+                <p>calle nombre de calle, 123, España, Barcelona, 08000</p>
+                <button>Modificar</button>
+            </div>
+            <h3>Método de Pago</h3>
+            <form>
+                <input type="radio" id="card" name="paymentType" value="card">
+                <label for="card">Pagar con tarjeta</label>
+                <input type="radio" id="bizum" name="paymentType" value="bizum">
+                <label for="bizum">Pagar con Bizum</label>
+                <input type="radio" id="paypal" name="paymentType" value="paypal">
+                <label for="paypal">Pagar con Paypal</label>
+            </form>
+            <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Seguir Comprando</a>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
