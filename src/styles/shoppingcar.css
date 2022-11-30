@@ -1,0 +1,38 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10rem; 
+    margin: 1.25rem 2.5rem;
+}
+
+h3.shopping-car-headings{
+    border: 0.1rem solid var(--colorBlack);
+    border-radius: 3rem;
+    padding: 0.5rem 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.box-background{
+    background-color: var(--colorPaleOrange);
+    border-radius: 0.5rem;
+    padding: 3rem 5rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+button.modify-button{
+    padding: 0.5rem 2rem;
+    border-radius: 5rem;
+    color: var(--colorWhite);
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
