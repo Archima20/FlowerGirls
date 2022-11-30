@@ -12,7 +12,7 @@
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-items: center; 
     text-align: center;   
@@ -20,6 +20,7 @@
 .carnivor img{
     width: 15rem;
     height: 15rem; 
+    border-radius: 15%;
 }
 .grupo1 {
     width: 20rem;
@@ -27,8 +28,22 @@
     background-color: var(--colorPaleOrange); 
     align-items: center;
     justify-items: center;
-    text-align: center;
+    border-radius: 15%;
 
+}
+form {
+    padding: 0,2rem;
+}
+button {
+    padding: 0,8rem;
+    background-color: var(--colorOrange);
+    border-radius: 20%;
+    position: relative;
+
+}
+.add-to-the-card {
+    font-size: 0,5rem;
+    color: var(--colorWhite);
 }
 
 .hydroponic {
@@ -38,7 +53,7 @@
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-items: center;
     text-align: center;   
@@ -46,6 +61,7 @@
 .hydroponic img {
     width: 15rem;
     height: 15rem; 
+    border-radius: 15%;
 }
 .grupo2 {
     display: flex;
@@ -54,4 +70,5 @@
     background-color: var(--colorPaleOrange); 
     align-items: center;
     justify-items: center;
+    border-radius: 15%;
 }
