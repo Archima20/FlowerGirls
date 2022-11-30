@@ -8,23 +8,26 @@ Florecer és un e-commerce de flores exoticas, entre carnivoras y creadas en hid
 Donde el usuario podrá visualizar todos los productos que existan, podrá escoger cuáles quiere comprar, la cantidad que quiere y podrá añadirlos a un carrito de compras.
 
 ### Tabla de Contenido
+***
 1. [General Info](#general-info)
 2. [Herramientas](#Herramientas)
 3. [Demo](#Demo)
 4. [Lenguajes](#Lenguajes)
 
 ### Herramientas
+***
 
 * [Trello](https://trello.com/b/XboqYDaU/flowergirls)
 * [Figma](https://www.figma.com/file/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=25%3A3&t=WLoaMwbvSMzDtUlM-0)
 * [GitHub](https://github.com/Archima20/FlowerGirls)
-* [VisualStudioCode] 
+* Visual Studio Code
 
 ### Demo
-
+***
 * http://127.0.0.1:5500/index.html/
 
 ### Lenguajes
+***
 Javascript, HTML, CSS...
 
 
