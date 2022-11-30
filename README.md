@@ -6,14 +6,21 @@
 ## Tabla de Contenido
 
 1. [Información General](#información-general)
-2. [Herramientas](#herramientas)
-3. [Demo](#demo)
-4. [Lenguajes](#lenguajes)
+2. [Tecnologías](#tecnologías)
+3. [Herramientas](#herramientas)
+4. [Demo](#demo)
+5. [Instalación](#instalación)
 
 ## Información General
 
 Florecer és un e-commerce de flores exoticas, entre carnivoras y creadas en hidroponía. 
 Donde el usuario podrá visualizar todos los productos que existan, podrá escoger cuáles quiere comprar, la cantidad que quiere y podrá añadirlos a un carrito de compras.
+
+## Tecnologías
+
+* Javascript
+* HTML
+* CSS
 
 ## Herramientas
 
@@ -26,8 +33,8 @@ Donde el usuario podrá visualizar todos los productos que existan, podrá escog
 
 * http://127.0.0.1:5500/index.html/
 
-## Lenguajes
+## Instalación
 
-Javascript, HTML, CSS...
+* [GitHub](https://github.com/Archima20/FlowerGirls)
 
 
