@@ -1,0 +1,57 @@
+.banner {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.banner img {   
+    height: 20rem;
+    width: 100%;
+}
+.carnivor {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-items: center; 
+    text-align: center;   
+}
+.carnivor img{
+    width: 15rem;
+    height: 15rem; 
+}
+.grupo1 {
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--colorPaleOrange); 
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.hydroponic {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;   
+}
+.hydroponic img {
+    width: 15rem;
+    height: 15rem; 
+}
+.grupo2 {
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--colorPaleOrange); 
+    align-items: center;
+    justify-items: center;
+}
