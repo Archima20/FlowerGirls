@@ -22,31 +22,33 @@
             <div class="user"><i class="fa-solid fa-user"></i></div> 
         </section>  
     </header>
+
     <main>
         <section class="user-information">
-            <h3>Cliente</h3>
-            <div>
+            <h3 class="shopping-car-headings">Cliente</h3>
+            <div class="box-background">
                 <p>Funeraría Perez</p>
                 <p>+34 612 345 678</p>
-                <button>Modificar</button>
+                <button type="button" class="modify-button">Modificar</button>
             </div>
-            <h3>Dirección de Entrega</h3>
-            <div>
-                <p>calle nombre de calle, 123, España, Barcelona, 08000</p>
-                <button>Modificar</button>
+            <h3 class="shopping-car-headings">Dirección de Entrega</h3>
+            <div class="box-background">
+                <p class="user-address">calle nombre de calle, 123, España, Barcelona, 08000</p>
+                <button type="button" class="modify-button">Modificar</button>
             </div>
-            <h3>Método de Pago</h3>
-            <form>
-                <input type="radio" id="card" name="paymentType" value="card">
-                <label for="card">Pagar con tarjeta</label>
-                <input type="radio" id="bizum" name="paymentType" value="bizum">
-                <label for="bizum">Pagar con Bizum</label>
-                <input type="radio" id="paypal" name="paymentType" value="paypal">
-                <label for="paypal">Pagar con Paypal</label>
+            <h3 class="shopping-car-headings">Método de Pago</h3>
+            <form class="payment-form box-background">
+                <label for="card"><input type="radio" id="card" name="paymentType" value="card"> Pagar con tarjeta</label>
+                <label for="bizum"><input type="radio" id="bizum" name="paymentType" value="bizum"> Pagar con Bizum</label>
+                <label for="paypal"><input type="radio" id="paypal" name="paymentType" value="paypal"> Pagar con Paypal</label>
             </form>
             <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Seguir Comprando</a>
         </section>
+        <section>
+            <h3 class="shopping-car-headings">Mis Compras</h3>
+        </section>
     </main>
+
     <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
