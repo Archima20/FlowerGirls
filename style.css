@@ -1,0 +1,35 @@
+
+@import url("./src/styles/header.css");
+@import url("./src/styles/main.css");
+
+@font-face {
+    font-family: "Better Yesterday";
+    src: url(./src/fonts/Better\ Yesterday.otf); src: url(./src/fonts/Better\ Yesterday\ italic.otf)
+}
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap'); 
+:root{ 
+    --colorWhite:#FFFFFF;
+    --colorPaleOrange:#FFEDE0; 
+    --colorOrange:#FF7C19;
+    --colorPaleGray:#F5F5F5;
+    --colorDarkGray:#B6BCC8; 
+    --colorBlack: #000000;
+    --fontLetter1: "Better Yesterday";
+    --fontLetter2: 'Arvo', serif;
+    }
+
+html {
+    font-size: 62.5%;
+}
+    
+*{ padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+background-color: var(--colorDarkGray);
+
+ }
+
