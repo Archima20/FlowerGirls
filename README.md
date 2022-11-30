@@ -12,29 +12,29 @@
 4. [Demo](#demo)
 5. [Instalación](#instalación)
 
-## Información General
+## :page_facing_up:Información General
 
 Florecer es un e-commerce de flores para funerarías. Ofrecemos a nuestros clientes dos tipos de productos: Flores Carnivoras y Flores Creadas en Hidroponía. 
 En nuestra página web el usuario podrá visualizar todos los productos que existan, podrá escoger cuáles quiere comprar, la cantidad que quiere y podrá añadirlos a un carrito de compras.
 
-## Tecnologías
+## :computer:Tecnologías
 
 * Javascript
 * HTML
 * CSS
 
-## Herramientas
+## 	:hammer:Herramientas
 
 * [Trello](https://trello.com/b/XboqYDaU/flowergirls)
 * [Figma](https://www.figma.com/file/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=25%3A3&t=WLoaMwbvSMzDtUlM-0)
 * [GitHub](https://github.com/Archima20/FlowerGirls)
 * Visual Studio Code
 
-## Demo
+## :tv:Demo
 
-* http://127.0.0.1:5500/index.html/
+* <http://127.0.0.1:5500/index.html>
 
-## Instalación
+## :minidisc:Instalación
 
 * [GitHub](https://github.com/Archima20/FlowerGirls)
 
