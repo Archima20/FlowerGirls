@@ -2,10 +2,12 @@
     margin-left: 2%;
     margin-right: 2%;
 }
+
 .banner img {   
     height: 20rem;
     width: 100%;
 }
+
 .carnivor {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -17,11 +19,13 @@
     justify-items: center; 
     text-align: center;   
 }
+
 .carnivor img{
     width: 15rem;
     height: 15rem; 
     border-radius: 15%;
 }
+
 .type-of-flowers {
     width: 20rem;
     height: 20rem;
@@ -30,17 +34,20 @@
     justify-content: center;
     background-color: var(--colorPaleOrange); 
     border-radius: 15%;
-    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);  
 }
+
 form {
     padding: 0.8rem;
 }
+
 select {
     padding: 0.3rem;
     border-radius: 1.3rem;
     color: var(--colorBlack);
     box-shadow:  8px 10px 10px 1px rgba(0,0,0,0.5);
 }
+
 button {
     padding: 0.8rem;
     background-color: var(--colorOrange);
@@ -49,18 +56,17 @@ button {
     color: var(--colorWhite);
     font-size: 1rem;
 }
+
 .hydroponic {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    margin: 2%;
     font-size: 1.5rem;
     align-items: center;
     justify-items: center;
     text-align: center;   
 }
+
 .hydroponic img {
     width: 15rem;
     height: 15rem; 
