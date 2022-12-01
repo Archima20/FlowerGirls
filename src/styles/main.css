@@ -25,25 +25,25 @@
 .grupo1 {
     width: 20rem;
     height: 20rem;
-    background-color: var(--colorPaleOrange); 
+    display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    background-color: var(--colorPaleOrange); 
     border-radius: 15%;
-
+    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
 }
 form {
-    padding: 0,2rem;
+    padding: 0.8rem;
 }
+
 button {
     padding: 0,8rem;
     background-color: var(--colorOrange);
-    border-radius: 20%;
-    position: relative;
-
-}
-.add-to-the-card {
-    font-size: 0,5rem;
+    border-radius: 1.3rem;
+    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
     color: var(--colorWhite);
+    font-size: 1rem;
+    padding: 0.8rem;
 }
 
 .hydroponic {
@@ -71,4 +71,5 @@ button {
     align-items: center;
     justify-items: center;
     border-radius: 15%;
+    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
 }
