@@ -10,7 +10,8 @@
 2. [Tecnologías](#tecnologías)
 3. [Herramientas](#herramientas)
 4. [Demo](#demo)
-5. [Instalación](#instalación)
+5. [Prototipo](#prototipo)
+6. [Instalación](#instalación)
 
 ## :page_facing_up:Información General
 
@@ -32,7 +33,12 @@ En nuestra página web el usuario podrá visualizar todos los productos que exis
 
 ## :tv:Demo
 
-* <http://127.0.0.1:5500/index.html>
+* [Demo](http://127.0.0.1:5500/index.html)
+
+## :loop:Prototipo
+
+* [Escritorio](https://www.figma.com/proto/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=25%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A3)
+* [Movil](https://www.figma.com/proto/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=75%3A142&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A3)
 
 ## :minidisc:Instalación
 
