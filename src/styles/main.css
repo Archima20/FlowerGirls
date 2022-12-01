@@ -22,7 +22,7 @@
     height: 15rem; 
     border-radius: 15%;
 }
-.grupo1 {
+.type-of-flowers {
     width: 20rem;
     height: 20rem;
     display: flex;
@@ -35,17 +35,20 @@
 form {
     padding: 0.8rem;
 }
-
+select {
+    padding: 0.3rem;
+    border-radius: 1.3rem;
+    color: var(--colorBlack);
+    box-shadow:  8px 10px 10px 1px rgba(0,0,0,0.5);
+}
 button {
-    padding: 0,8rem;
+    padding: 0.8rem;
     background-color: var(--colorOrange);
     border-radius: 1.3rem;
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
     color: var(--colorWhite);
     font-size: 1rem;
-    padding: 0.8rem;
 }
-
 .hydroponic {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -62,14 +65,4 @@ button {
     width: 15rem;
     height: 15rem; 
     border-radius: 15%;
-}
-.grupo2 {
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    background-color: var(--colorPaleOrange); 
-    align-items: center;
-    justify-items: center;
-    border-radius: 15%;
-    box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
 }
