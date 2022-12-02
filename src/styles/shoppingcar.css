@@ -68,3 +68,11 @@ a.keep-buying {
 a i{
     color: var(--colorBlack);
 }
+
+.payment-img{
+    width: 15%;
+}
+
+.continer{
+    height: 60%;
+}
