@@ -26,14 +26,19 @@
     </header>
          
     <main>
-        <section class="banner"> <img  src="./src/images/centro_rojo_banner.jpg" alt="un ramo de rosas rojas en una mesa"></section>
+        <section class="banner"> <img  id="desktop-banner" src="./src/images/centro_rojo_banner.jpg" alt="un ramo de rosas rojas en una mesa"> 
+        <img class="mobile-banner" src="./src/images/mob-banner02.jpg"  alt="un ramo de rosas rojas en una mesa"> </section>
         <section class="carnivor">
          <h2 class="type-of-flowers">Flores Carnivoras</h2>
               <div id="product1" class="product"> 
                  <img class="product-image" src="./src/images/Sarracenia.jpg" alt="un sarracenia verde y rojo en una maceta"></img>
                  <div class="details">
                  <p><span class="flower-name">Sarracenia</span><span class="price">18,99€</span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                </div>
              </div>
@@ -42,7 +47,11 @@
                  <img class="product-image" src="./src/images/Drosera.jpg" alt=" una drosera capensis en una maceta">
                  <div class="details">
                  <p><span class="flower-name">Drosera Capensis</span><span class="price">15,99€ </span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
               </div>
@@ -51,7 +60,11 @@
                  <img class="product-image" src="./src/images/venus_caça.jpg" alt="una venus casa moscas en una maceta">
                  <div class="details">
                  <p><span class="flower-name">Venus Casa moscas</span> <span class="price">17,90€</span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
               </div>
@@ -60,7 +73,11 @@
                  <img class="product-image" src="./src/images/Dionaea.jpg" alt="una dionaea en una maceta">
                  <div class="details">
                  <p><span class="flower-name"> Dionaea </span><span class="price">14,50€</span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
               </div>
@@ -69,7 +86,11 @@
                  <img class="product-image" src="./src/images/benoon_venus.jpg" alt="una benoon venus en una maceta">
                  <div class="details">
                  <p> <span class="flower-name">Benoon Venus </span><span class="price"> 12,99 € </span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
                </div>
@@ -80,7 +101,11 @@
                  <img class="product-image" src="./src/images/centro_rojo.jpg" alt="un ramo de rosas rojas"></img>
                  <div class="details">
                  <p><span class="flower-name">Centro Rojo</span><span class="price">69,99€</span></p>
-                 
+                 <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
              </div>
@@ -89,7 +114,11 @@
                 <img class="product-image" src="./src/images/centro_naranja.jpg" alt="un ramo de flores naranjas"></img>
                 <div class="details">
                 <p><span class="flower-name">Centro Naranja</span><span class="price">117,99€</span></p>
-                
+                <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
             </div>
@@ -98,7 +127,11 @@
                 <img class="product-image" src="./src/images/corona_clasica_multicolor.jpg" alt="corona de flores multicolores"></img>
                 <div class="details">
                 <p><span class="flower-name">Corona Multicolor</span> <span class="price">89€</span></p>
-                
+                <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
             </div>
@@ -107,7 +140,11 @@
                 <img class="product-image" src="./src/images/palma_blanca.jpg" alt="una palma de flores blancas"></img>
                 <div class="details">
                 <p><span class="flower-name">Palma Blanca</span><span class="price">63,50€</span></p>
-                
+                <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
             </div>
@@ -116,7 +153,11 @@
                 <img class="product-image" src="./src/images/almohadon_multicolor.jpg" alt="un ramo de flores multicolores"></img>
                 <div class="details">
                 <p><span class="flower-name">Ramo Multicolor</span><span class="price">139,00€</span></p>
-                
+                <div class="quantity-buttons">
+                    <button type="button">-</button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="2" min="0" max="100">
+                    <button type="button">+</button>
+                </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
             </div>
