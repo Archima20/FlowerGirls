@@ -1,0 +1,70 @@
+@media screen and (max-width: 576px) {
+    nav{
+        display: none;
+    }
+
+    .logo{
+        font-size: 8rem;
+    }
+
+    section.icons {
+        gap: 1.8rem;
+    }
+
+    .user, .shopping-card{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        
+    }
+
+    .banner{
+       /* margin: 0;*/
+    }
+
+    h2.type-of-flowers{
+        width: 7rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        inline-size: 30rem;
+        overflow-wrap: break-word;
+        border-radius: 35rem;
+        margin-top: 1rem;
+    }
+
+    .carnivor, .hydroponic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem ;
+    }
+
+    .product{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       /*column-gap: 0.8rem;*/
+       justify-content: space-between;
+       align-items: center;
+       align-content: center;
+    }
+
+    .product-image{
+        align-self: center;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+}
