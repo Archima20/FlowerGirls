@@ -41,17 +41,6 @@
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);  
 }
 
-form {
-    padding: 0.8rem;
-}
-
-select {
-    padding: 0.3rem;
-    border-radius: 1.3rem;
-    color: var(--colorBlack);
-    box-shadow:  8px 10px 10px 1px rgba(0,0,0,0.5);
-}
-
 button {
     padding: 0.8rem;
     background-color: var(--colorOrange);
