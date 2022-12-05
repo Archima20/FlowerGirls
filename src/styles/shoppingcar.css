@@ -37,6 +37,7 @@ button.modify-button,.buy-now{
     flex-direction: column;
     margin-bottom: 5rem;
     align-items: stretch;
+        
 }
 
 .empty-car {
@@ -44,7 +45,6 @@ button.modify-button,.buy-now{
     padding: 0.5rem 2rem;
     border-radius: 5rem;
     font-size: 1.5rem;
-
 }
 
 .total-price {
@@ -64,6 +64,7 @@ button.modify-button,.buy-now{
     gap: 1rem;
 
 }
+
 a.keep-buying {
     color: var(--colorOrange);
     font-weight: bold;
@@ -71,14 +72,17 @@ a.keep-buying {
     padding-bottom: 5rem;
     text-decoration: none;
 }
+
 a i{
     color: var(--colorBlack);
 }
 
 .payment-img{
-    width: 15%;
+    width: 15%; 
+    
 }
 
 .continer{
     height: 60%;
+
 }
