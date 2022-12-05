@@ -49,6 +49,27 @@ button {
     color: var(--colorWhite);
     font-size: 1rem;
 }
+.quantity-buttons {
+    background-color: var(--colorPaleGray);
+    width: 9rem;
+    margin-inline: 10rem;
+    margin-bottom: 0.7rem;
+    margin-top: 00.5rem;
+    
+}
+input {
+    text-align: center;
+}
+.quantity-button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--colorOrange);
+    background-color: var(--colorPaleGray);
+    border: 1px;
+    font-size: 1rem;
+    box-shadow: none;
+
+}
 
 .hydroponic {
     display: grid;
