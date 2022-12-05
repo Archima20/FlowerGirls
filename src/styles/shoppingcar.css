@@ -1,6 +1,6 @@
 .main-shopping-cart{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     column-gap: 10rem; 
     margin: 1.25rem 2.5rem;
 }
@@ -11,24 +11,24 @@ h3.shopping-car-headings{
     padding: 0.5rem 5rem;
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 2.6rem;
 }
 
 .box-background{
     background-color: var(--colorPaleOrange);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     padding: 3rem 5rem;
-    margin-bottom: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     align-items: center;
 }
 
 button.modify-button,.buy-now{
     padding: 0.5rem 2rem;
     border-radius: 5rem;
+    font-size: 1.5rem;
     color: var(--colorWhite);
 }
 
@@ -36,23 +36,28 @@ button.modify-button,.buy-now{
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .empty-car {
     background-color: var(--colorDarkGray);
     padding: 0.5rem 2rem;
     border-radius: 5rem;
+    font-size: 1.5rem;
+
 }
+
 .total-price {
 
     font-size: 2rem;
     font-weight: bold;
 }
+
 .price {
     margin-left: 1rem;
 
 }
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -63,6 +68,7 @@ a.keep-buying {
     color: var(--colorOrange);
     font-weight: bold;
     font-size: 2rem;
+    padding-bottom: 5rem;
     text-decoration: none;
 }
 a i{
