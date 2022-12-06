@@ -22,13 +22,13 @@ const shoppingCart = {
   },
 };
 
-document.addEventListener('DOMContentLoaded', ( => {
-  fetchData()
+document.addEventListener('DOMContentLoaded', () => {
+  fetchData();
   if (localStorage.getItem('shoppingcart')) {
     shoppingCart = JSON.parse(localStorage.getItem('shoppingcart'));
     printShoppingCart()
   }
-}))
+})
 
 const templateshoppingcart = document.getElementById('templateShoppingCart').content;
 const fragment = document.createDocumentFragment();
