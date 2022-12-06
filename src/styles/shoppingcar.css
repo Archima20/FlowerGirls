@@ -88,3 +88,8 @@ a i{
     height: 60%;
 
 }
+
+th, td{
+    padding: 0.5rem 7rem;
+    font-size: 2rem;
+}
