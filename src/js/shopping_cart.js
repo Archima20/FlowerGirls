@@ -1,4 +1,4 @@
-const shoppingCart = {
+let shoppingCart = {
   product1: {
     id: "product1",
     image: "http://127.0.0.1:5500/src/images/Sarracenia.jpg",
@@ -22,13 +22,12 @@ const shoppingCart = {
   },
 };
 
-document.addEventListener('DOMContentLoaded', ( => {
-  fetchData()
+document.addEventListener('DOMContentLoaded', ( )=> {
   if (localStorage.getItem('shoppingcart')) {
     shoppingCart = JSON.parse(localStorage.getItem('shoppingcart'));
     printShoppingCart()
   }
-}))
+})
 
 const templateshoppingcart = document.getElementById('templateShoppingCart').content;
 const fragment = document.createDocumentFragment();
