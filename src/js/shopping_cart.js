@@ -46,3 +46,10 @@ const printShoppingCart = () => {
     })  
     items.appendChild(fragment);
 }
+const  totalQuantity = Object.values(shoppingCart).reduce((acc, {productQuantity}) => acc + productQuantity, 0)
+
+const  totalPrice = Object.values(shoppingCart).reduce((acc, {productQuantity, productPrice}) => acc + productQuantity * productPrice, 0)
+
+const total = document.querySelector(".total-price")
+  
+total.innerHTML = `${totalPrice}`

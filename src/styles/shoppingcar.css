@@ -90,6 +90,15 @@ a i{
 }
 
 th, td{
-    padding: 0.5rem 7rem;
+    padding: 0.1rem 7rem;
     font-size: 2rem;
+}
+
+th{
+    padding: ;
+}
+
+td img{
+    width: 7rem;
+    height: 7rem;
 }
