@@ -41,17 +41,6 @@
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);  
 }
 
-form {
-    padding: 0.8rem;
-}
-
-select {
-    padding: 0.3rem;
-    border-radius: 1.3rem;
-    color: var(--colorBlack);
-    box-shadow:  8px 10px 10px 1px rgba(0,0,0,0.5);
-}
-
 button {
     padding: 0.8rem;
     background-color: var(--colorOrange);
@@ -59,6 +48,27 @@ button {
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
     color: var(--colorWhite);
     font-size: 1rem;
+}
+.quantity-buttons {
+    background-color: var(--colorPaleGray);
+    width: 9rem;
+    margin-inline: 10rem;
+    margin-bottom: 0.7rem;
+    margin-top: 00.5rem;
+    
+}
+input {
+    text-align: center;
+}
+.quantity-button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--colorOrange);
+    background-color: var(--colorPaleGray);
+    border: 1px;
+    font-size: 1rem;
+    box-shadow: none;
+
 }
 
 .hydroponic {

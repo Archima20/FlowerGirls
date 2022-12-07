@@ -1,23 +1,49 @@
-let shoppingCard = {};
+let shoppingCart = {};
 const products = document.getElementsByClassName("add-to-the-card");
 
-Array.from(products).forEach(product => product.addEventListener("click", event => {
-    addToTheCard(event)
-}))
+Array.from(products).forEach((product) =>
+  product.addEventListener("click", (event) => {
+    addToTheCart(event);
+  })
+);
 
-const addToTheCard = event => {
-    if (event.target.classList.contains("add-to-the-card")){
-        setCard(event.target.parentElement)
-    } 
-}; 
-
-const setCard = object => {
-    const product = { 
-        id: object.id, 
-        image: object.querySelector(".product-image").src,
-        productName: object.querySelector(".flower-name").textContent,
-        productPrice: object.querySelector(".price").textContent,
-        productQuantity: object.querySelector("#quantity").value
-    }
-    console.log(product);
+const addToTheCart = (event) => {
+  if (event.target.classList.contains("add-to-the-card")) {
+    setCart(event.target.parentElement.parentElement);
+  }
 };
+
+const setCart = (object) => {
+  const product = {
+    id: object.id,
+    image: object.querySelector(".product-image").src,
+    productName: object.querySelector(".flower-name").textContent,
+    productPrice: parseFloat(object.querySelector(".price").textContent),
+    productQuantity: parseInt(object.querySelector("#quantity").value),
+  };
+
+  if (shoppingCart.hasOwnProperty(product.id)) {
+    shoppingCart[product.id].productQuantity = product.productQuantity;
+    console.log(shoppingCart);
+  } else {
+    shoppingCart[product.id] = { ...product };
+    console.log(shoppingCart);
+  }
+  localStorage.setItem('shoppingcart', JSON.stringify(shoppingCart));
+};
+
+document.querySelectorAll(".quantity-button").forEach((qbutton) => {
+  qbutton.addEventListener("click", (e) => {
+    const clickedButton = e.currentTarget;
+    const input = clickedButton.parentElement.querySelector("input");
+    const type = clickedButton.getAttribute("data-type");
+    const currentQuantity = parseInt(input.value);
+    if (type === "substract" && currentQuantity > 0) {
+      input.value = currentQuantity - 1;
+    } else if (type === "add") {
+      input.value = currentQuantity + 1;
+    }
+  });
+});
+
+
