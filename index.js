@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   const fragment = document.createDocumentFragment();
   
   const printShoppingCart = () => {
+    items.innerHTML = '';
       Object.values(shoppingCart).forEach(product =>{
           templateshoppingcart.querySelector('#selectedProduct').value = product.value;
           templateshoppingcart.querySelector('img').src = product.image;
@@ -76,14 +77,14 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   const total = document.querySelector(".total-price")
     
   total.innerHTML = `${totalPrice}`
+}
   
   const emptyCartButton = document.querySelector(".empty-car");
   console.log(emptyCartButton);
   emptyCartButton.addEventListener("click", () => {
     shoppingCart = {};
     sessionStorage.clear();
-    fetch();
-
-
+    console.log(shoppingCart);
+    printShoppingCart();
   });
-}
+
