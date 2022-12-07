@@ -94,11 +94,13 @@ th, td{
     font-size: 2rem;
 }
 
-th{
-    padding: ;
-}
-
 td img{
     width: 7rem;
     height: 7rem;
 }
+
+
+   table {
+    overflow: auto;
+    height: 2rem;
+   }
