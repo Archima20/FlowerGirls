@@ -1,13 +1,13 @@
-let shoppingCard = {};
+let shoppingCart = {};
 const products = document.getElementsByClassName("add-to-the-card");
 
 Array.from(products).forEach(product => product.addEventListener("click", event => {
-    addToTheCard(event)
+    addToTheCart(event)
 }))
 
-const addToTheCard = event => {
+const addToTheCart = event => {
     if (event.target.classList.contains("add-to-the-card")){
-        setCard(event.target.parentElement)
+        setCart(event.target.parentElement.parentElement);
     } 
 }; 
 
