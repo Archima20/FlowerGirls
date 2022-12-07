@@ -87,4 +87,26 @@ document.addEventListener('DOMContentLoaded', ( )=> {
     console.log(shoppingCart);
     printShoppingCart();
   });
+  
+  const deleteItem = document.querySelector("#selectedProduct");
+  deleteItem.addEventListener("click", (e) => { 
+    const id = e.target.dataset.item;
+    shoppingCart= Object.value(shoppingCart).filter((shoppingcartId) =>{
+      return  shoppingcartId !== id;
+    });
+    printShoppingCart();
+  })
+  
+
+
+  /*function borrarItemCarrito(evento) {
+    // Obtenemos el producto ID que hay en el boton pulsado
+    const id = evento.target.dataset.item;
+    // Borramos todos los productos
+    carrito = carrito.filter((carritoId) => {
+        return carritoId !== id;
+    });
+    // volvemos a renderizar
+    renderizarCarrito();
+}*/
 
