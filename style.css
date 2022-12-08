@@ -3,6 +3,7 @@
 @import url("./src/styles/main.css");
 @import url("./src/styles/shoppingcar.css");
 @import url("./src/styles/media_query_mobile.css");
+@import url("./src/styles/media_query_desktop.css");
 
 @font-face {
     font-family: "Better Yesterday";

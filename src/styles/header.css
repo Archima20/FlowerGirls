@@ -4,7 +4,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1.25rem 2.5rem;
-}
+
+    gap: 4rem;
+    }
+
 
 .logo {
     font-family: var(--fontLetter1);
@@ -28,8 +31,9 @@ ul.navbar {
 
 .navbar li {
     font-family: var(--fontLetter2);
+
+    font-size: 3rem;
     color: var(colorBlack);
-    font-size: 3.5rem;
     list-style: none;
     background-color: var(--colorPaleOrange);
     padding: 0.3rem 2.4rem;
