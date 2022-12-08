@@ -12,15 +12,23 @@
     <header>
         <h1 class="logo">Florecer</h1>
         <nav>
+            <input type="checkbox" id="check"/>
+            <label for="check" class="bar-btn">
+                <div class="icono-menu">
+                    <div class="linea"></div>
+                    <div class="linea linea-corta"></div>
+                    <div class="linea"></div>
+                </div>
+            </label>
             <ul class="navbar">
-                 <li class="carni">Flores Carnivoras</li>
-                 <li class="hydro">Flores Hidroponicas</li>
-                 <li class="about">Quienes Somos</li>
-                 <li class="contact">Contacto</li>
+                <li><a class ="active" href="#">Flores Carnivoras</a></li>
+                <li><a href="#">Flores Hidroponicas</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav> 
         <section class="icons"> 
-         <a href="./shoppingcar.html" target="blank"> <div class="shopping-card"><i class="fa-sharp fa-solid fa-cart-shopping"></i></div></a>
+         <a href="./shoppingcar.html"> <div class="shopping-card"><i class="fa-sharp fa-solid fa-cart-shopping"></i></div></a>
          <div class="user"><i class="fa-solid fa-user"></i></div> 
         </section>  
     </header>
@@ -31,26 +39,26 @@
         <section class="carnivor">
          <h2 class="type-of-flowers">Flores Carnivoras</h2>
               <div id="product1" class="product"> 
-                   <img class="product-image" src="./src/images/Sarracenia.jpg" alt="un sarracenia verde y rojo en una maceta"></img>
-                    <div class="details">
-                        <p><span class="flower-name">Sarracenia</span><span class="price">18.99€</span></p>
-                        <div class="quantity-buttons">
-                             <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                             <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
-                             <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                            <button type="button" class="add-to-the-card">Agregar al Carrito</button>
-                    </div>
+                 <img class="product-image" src="./src/images/Sarracenia.jpg" alt="un sarracenia verde y rojo en una maceta"></img>
+                 <div class="details">
+                 <p><span class="flower-name">Sarracenia</span><span class="price">18.99€</span></p>
+                 <div class="quantity-buttons">
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
+               </div>
              </div>
 
-  <div id="product2" class="product">
+              <div id="product2" class="product">
                  <img class="product-image" src="./src/images/Drosera.jpg" alt=" una drosera capensis en una maceta">
                  <div class="details">
-                 <p><span class="flower-name">Drosera Capensis</span><span class="price">15.99€</span></p>
-                 <div class="quantity-buttons" >
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                 <p><span class="flower-name">Drosera Capensis</span><span class="price">15.99€ </span></p>
+                 <div class="quantity-buttons">
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
@@ -61,9 +69,9 @@
                  <div class="details">
                  <p><span class="flower-name">Venus Casa moscas</span> <span class="price">17.90€</span></p>
                  <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
@@ -74,9 +82,9 @@
                  <div class="details">
                  <p><span class="flower-name"> Dionaea </span><span class="price">14.50€</span></p>
                  <div class="quantity-buttons">
-                    <button type="button"class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button"class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
@@ -87,9 +95,9 @@
                  <div class="details">
                  <p> <span class="flower-name">Benoon Venus </span><span class="price"> 12.99 € </span></p>
                  <div class="quantity-buttons">
-                    <button type="button"class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button"class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
@@ -102,9 +110,9 @@
                  <div class="details">
                  <p><span class="flower-name">Centro Rojo</span><span class="price">69.99€</span></p>
                  <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                  <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                  </div>
@@ -115,9 +123,9 @@
                 <div class="details">
                 <p><span class="flower-name">Centro Naranja</span><span class="price">117.99€</span></p>
                 <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
@@ -126,11 +134,11 @@
                 <div id="product8" class="product"> 
                 <img class="product-image" src="./src/images/corona_clasica_multicolor.jpg" alt="corona de flores multicolores"></img>
                 <div class="details">
-                <p><span class="flower-name">Corona Multicolor</span> <span class="price">89.00€</span></p>
+                <p><span class="flower-name">Corona Multicolor</span> <span class="price">89€</span></p>
                 <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
@@ -141,9 +149,9 @@
                 <div class="details">
                 <p><span class="flower-name">Palma Blanca</span><span class="price">63.50€</span></p>
                 <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
@@ -154,9 +162,9 @@
                 <div class="details">
                 <p><span class="flower-name">Ramo Multicolor</span><span class="price">139.00€</span></p>
                 <div class="quantity-buttons">
-                    <button type="button" class="quantity-button" data-type="substract"><i class="fa-solid fa-minus"></i></button>
-                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100" placeholder="0" value="0">
-                    <button type="button" class="quantity-button" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" data-type = "substract" class="quantity-button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                    <button type="button" data-type = "add" class ="quantity-button"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <button type="button" class="add-to-the-card">Agregar al Carrito</button>
                 </div>
@@ -164,6 +172,7 @@
        
     </main>
    <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
-   <script src="./index.js"></script>   
+   <script src="./index.js"></script>  
+  <!--<script src="./src/js/shopping_cart.js"></script> -->
 </body>
 </html>

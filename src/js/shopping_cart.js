@@ -1,26 +1,3 @@
-let shoppingCart = {
-  product1: {
-    id: "product1",
-    image: "http://127.0.0.1:5500/src/images/Sarracenia.jpg",
-    productName: "Sarracenia",
-    productPrice: 18,
-    productQuantity: 4,
-  },
-  product2: {
-    id: "product2",
-    image: "http://127.0.0.1:5500/src/images/Drosera.jpg",
-    productName: "Drosera Capensis",
-    productPrice: 15.99,
-    productQuantity: 5,
-  },
-  product7: {
-    id: "product7",
-    image: "http://127.0.0.1:5500/src/images/centro_naranja.jpg",
-    productName: "Centro Naranja",
-    productPrice: 117.99,
-    productQuantity: 10,
-  },
-};
 
 document.addEventListener('DOMContentLoaded', ( )=> {
   if (localStorage.getItem('shoppingcart')) {
@@ -34,6 +11,7 @@ const fragment = document.createDocumentFragment();
 
 const printShoppingCart = () => {
     Object.values(shoppingCart).forEach(product =>{
+        templateshoppingcart.querySelector('#selectedProduct').setAttribute("data-item", product.id)
         templateshoppingcart.querySelector('#selectedProduct').value = product.value;
         templateshoppingcart.querySelector('img').src = product.image;
         templateshoppingcart.querySelector('p').textContent = product.productName;
@@ -45,7 +23,7 @@ const printShoppingCart = () => {
         fragment.appendChild(clone);
     })  
     items.appendChild(fragment);
-}
+
 const  totalQuantity = Object.values(shoppingCart).reduce((acc, {productQuantity}) => acc + productQuantity, 0)
 
 const  totalPrice = Object.values(shoppingCart).reduce((acc, {productQuantity, productPrice}) => acc + productQuantity * productPrice, 0)
@@ -53,3 +31,10 @@ const  totalPrice = Object.values(shoppingCart).reduce((acc, {productQuantity, p
 const total = document.querySelector(".total-price")
   
 total.innerHTML = `${totalPrice}`
+}
+
+const emptyCartButton = document.querySelector(".empty-car");
+emptyCartButton.addEventListener("click", () => {
+  shoppingCart = {};
+
+});
