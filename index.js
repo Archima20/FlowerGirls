@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   const  totalQuantity = Object.values(shoppingCart).reduce((acc, {productQuantity}) => acc + productQuantity, 0)
 
   
-  const  totalPrice = Object.values(shoppingCart).reduce((acc, {productQuantity, productPrice}) => acc + productQuantity * productPrice, 0)
+  const  totalPrice = (Object.values(shoppingCart).reduce((acc, {productQuantity, productPrice}) => acc + productQuantity * productPrice, 0)).toFixed(2);
   
   const total = document.querySelector(".total-price")
     

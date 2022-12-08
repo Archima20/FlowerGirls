@@ -24,7 +24,10 @@ nav {
     justify-content: left;
     align-items: center;
 }
-
+.logo a{
+    text-decoration: none;
+    color: var(--colorBlack);
+}
 .linea {
     width: 1.5rem;
     height: 0.2rem;
@@ -52,10 +55,11 @@ nav {
 .navbar {
     position: fixed;
     width: 90%;
-    top: 12rem;
+    top: 13.8rem;
     background: rgba(217, 217, 217, .90);
     text-align: center;
     transition: all .5s;
+    z-index: 5;
 }
 
 ul.navbar {
@@ -63,9 +67,10 @@ ul.navbar {
     flex-direction: column;
     gap: 0;
 }
+
 .navbar li {
     display: none;
-    margin: 3rem 0;
+    margin: 2rem 0;
     transition: all 0.5s;
     background-color: transparent;
     
@@ -169,11 +174,17 @@ p{
     flex-direction: column-reverse;
 }
 
+h1.logo {
+    color: var(--colorBlack)
+}
 th, td{
     padding: 0.5rem 0.5rem;
     font-size: 1.5rem;
 }
 
+h3.shopping-car-headings {
+    font-size: 2rem;
+}
 .mobile-add-substract-button{
     display: flex;
     flex-direction: column;
@@ -186,4 +197,35 @@ th, td{
 table{
     margin: auto;
 }
+
+.box-background {
+    padding:2rem 3rem;
+    
+}
+
+.empty-car{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.buy-now{
+    font-size: 1.5rem;
+}
+p.total-price{
+    display: flex;
+    flex-direction: row;
+}
+.info-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+}
+
+button.modify-button{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;}
 }

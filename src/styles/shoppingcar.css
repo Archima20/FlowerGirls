@@ -84,11 +84,16 @@ a i{
     
 }
 
+.product-heading{
+   text-align: left;
+}
 
 th, td{
-    padding: 0.5rem 2rem;
-    font-size: 2rem;
+    padding: 0.5rem 7rem;
+    font-size: 2.5rem;
+    margin:auto;
 }
+
 
 td img{
     width: 7rem;
