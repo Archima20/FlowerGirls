@@ -52,10 +52,11 @@ nav {
 .navbar {
     position: fixed;
     width: 90%;
-    top: 12rem;
+    top: 13.8rem;
     background: rgba(217, 217, 217, .90);
     text-align: center;
     transition: all .5s;
+    z-index: 5;
 }
 
 ul.navbar {
