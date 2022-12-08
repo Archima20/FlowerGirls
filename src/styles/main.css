@@ -46,9 +46,15 @@ button {
     background-color: var(--colorOrange);
     border-radius: 1.3rem;
     box-shadow: 8px 10px 10px 1px rgba(0,0,0,0.5);
+    font-family: var(--fontLetter2);
     color: var(--colorWhite);
     font-size: 1rem;
 }
+button:hover {
+    background: var(--colorPaleOrange);
+    color: var(--colorBlack);
+}
+
 .quantity-buttons {
     background-color: var(--colorPaleGray);
     width: 9rem;
