@@ -12,7 +12,6 @@ h3.shopping-car-headings{
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2.6rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem gray;
 }
 
 .box-background{
@@ -24,8 +23,7 @@ h3.shopping-car-headings{
     justify-content: space-between;
     font-size: 2.2rem;
     align-items: center;
-    margin-bottom: 2rem;
-    }
+}
 
 button.modify-button,.buy-now{
     padding: 0.5rem 2rem;
@@ -71,7 +69,6 @@ a.keep-buying {
     color: var(--colorOrange);
     font-weight: bold;
     font-size: 2rem;
-    padding-bottom: 5rem;
     text-decoration: none;
 }
 
@@ -84,7 +81,27 @@ a i{
     
 }
 
-.continer{
-    height: 60%;
 
+th, td{
+    padding: 0.1rem 7rem;
+    font-size: 2rem;
+}
+
+td img{
+    width: 7rem;
+    height: 7rem;
+}
+
+
+tbody{
+    overflow: scroll;
+    height: 1rem;
+}
+
+.selectedProduct{
+    border-radius:20%;
+    font-size: 1.5rem;
+    color: var(--colorOrange);
+    background-color: var(--colorWhite);
+    box-shadow: none;
 }

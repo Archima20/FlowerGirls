@@ -49,6 +49,7 @@ button {
     color: var(--colorWhite);
     font-size: 1rem;
 }
+
 .quantity-buttons {
     background-color: var(--colorPaleGray);
     width: 9rem;
