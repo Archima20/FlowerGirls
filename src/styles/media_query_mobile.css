@@ -168,4 +168,22 @@ p{
     display: flex;
     flex-direction: column-reverse;
 }
+
+th, td{
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.mobile-add-substract-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 1.8rem 0;
+}
+
+table{
+    margin: auto;
+}
 }
