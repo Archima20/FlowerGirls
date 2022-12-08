@@ -28,6 +28,7 @@ const setCart = (object) => {
     console.log(shoppingCart);
   }
   sessionStorage.setItem('shoppingcart', JSON.stringify(shoppingCart));
+  alert("El producto se a añadido al carrito."); 
 };
 
 document.querySelectorAll(".quantity-button").forEach((qbutton) => {
@@ -78,7 +79,8 @@ document.addEventListener('DOMContentLoaded', ( )=> {
       console.log(deletebuttons);
         deletebuttons.forEach((button) => {
           button.addEventListener("click", (e) => { 
-              delete shoppingCart[e.currentTarget.dataset.item];      
+              delete shoppingCart[e.currentTarget.dataset.item];
+              alert("El producto se ha eliminado del carrito.")      
           printShoppingCart();
         })
       })
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', ( )=> {
     sessionStorage.clear();
     console.log(shoppingCart);
     printShoppingCart();
+    alert("El carrito se ha vaciado.")
   });
   
   
