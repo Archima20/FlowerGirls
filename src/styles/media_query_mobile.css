@@ -67,9 +67,10 @@ ul.navbar {
     flex-direction: column;
     gap: 0;
 }
+
 .navbar li {
     display: none;
-    margin: 3rem 0;
+    margin: 2rem 0;
     transition: all 0.5s;
     background-color: transparent;
     
