@@ -3,6 +3,7 @@
 @import url("./src/styles/main.css");
 @import url("./src/styles/shoppingcar.css");
 @import url("./src/styles/media_query_mobile.css");
+@import url("./src/styles/media_query_desktop.css");
 
 @font-face {
     font-family: "Better Yesterday";
@@ -24,14 +25,17 @@ html {
     font-size: 62.5%;
 }
     
-*{ padding: 0;
+*{  
+    padding: 0;
     margin: 0;
+    text-decoration: none;
     border: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 body {
 background-color: var(--colorDarkGray);
 font-family: var(--fontLetter2);
- }
+}
 

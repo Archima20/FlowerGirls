@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Florecer</h1>
+        <h1 class="logo"><a href="./index.html">Florecer</a></h1>
         <nav>
             <ul class="navbar">
                  <li>Flores Carnivoras</li>
@@ -26,13 +26,13 @@
     <main class="main-shopping-cart">
         <section class="user-information">
             <h3 class="shopping-car-headings">Cliente</h3>
-            <div class="box-background">
+            <div class="box-background info-user">
                 <p>Funeraría Perez</p>
                 <p>+34 612 345 678</p>
                 <button type="button" class="modify-button">Modificar</button>
             </div>
             <h3 class="shopping-car-headings">Dirección de Entrega</h3>
-            <div class="box-background">
+            <div class="box-background address">
                 <p class="user-address">calle nombre de calle, 123, España, Barcelona, 08000</p>
                 <button type="button" class="modify-button">Modificar</button>
             </div>
@@ -42,11 +42,43 @@
                 <label for="bizum"><input type="radio" id="bizum" name="paymentType" value="bizum"> <img class="payment-img" src="./src/images/bizum.png" alt="texto bizum"> Pagar con Bizum</label>
                 <label for="paypal"><input type="radio" id="paypal" name="paymentType" value="paypal"> <img class="payment-img" src="./src/images/paypal_logo.png" alt="texto paypal"> Pagar con Paypal</label>
             </form>
-            <a class= "keep-buying" href="./index.html" target="_blank"><i class="fa-solid fa-arrow-left"></i> Seguir Comprando</a>
+            <a class= "keep-buying" href="./index.html"><i class="fa-solid fa-arrow-left"></i> Seguir Comprando</a>
         </section>
         <section>
             <h3 class="shopping-car-headings">Mis Compras</h3>
-            <div class="continer"></div>
+                <table class="continer">
+                    <thead>
+                 <tr>
+                    <th></th>
+                    <th scope="col" class="product-heading">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                 </tr>  
+                </thead>
+                <tbody id="items"></tbody> 
+                 
+                </table>
+
+            <template id="templateShoppingCart">
+                <tr>
+                    <td>
+                        <button type="button"  class="selectedProduct"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                    <td>
+                        <img src="./src/images/sarracenia.jpg" alt="Flor carnivora de nombre Sarracenia">
+                        <p>Sarracenia</p>
+                    </td>
+                    <td> <span>69.99</span>€</td>
+                    <td class="mobile-add-substract-button">
+                        <button type="button" class="quantity-button btn-substract" data-type="substract"><i class="fa-solid fa-minus"></i></button>
+                        <input type="text" inputmode="numeric" name="quantity" id="quantity" size="4" min="0" max="100"  placeholder="0" value="0">
+                        <button type="button" class="quantity-button btn-add" data-type="add"><i class="fa-solid fa-plus"></i></button>
+                    </td>
+                </tr>
+                
+            </template>
+
+
             <div class="box-background">
                 <div class="buttons">
                     <button type="button" class= "empty-car">Vaciar Carrito
@@ -54,14 +86,16 @@
                     <button type="button" class= "buy-now">Pagar Ahora
                     </button>
                 </div>
-                <p class="total-price">
-                    Total:   <span class="total-price"> 00,00€</span>
+                <p>
+                    Total: <span class="total-price"></span>€
                 </p>
             </div>
         </section>
     </main>
 
     <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="./index.js"> </script>
+    <!--<script src="./src/js/shopping_cart.js"></script>-->
+
 </body>
 </html>
