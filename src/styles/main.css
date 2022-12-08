@@ -51,7 +51,7 @@ button {
 }
 .quantity-buttons {
     background-color: var(--colorPaleGray);
-    width: 9rem;
+    width: 11rem;
     margin-inline: 10rem;
     margin-bottom: 0.7rem;
     margin-top: 00.5rem;

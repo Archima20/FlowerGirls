@@ -30,7 +30,7 @@ h3.shopping-car-headings{
 button.modify-button,.buy-now{
     padding: 0.5rem 2rem;
     border-radius: 5rem;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: var(--colorWhite);
 }
 
@@ -46,7 +46,7 @@ button.modify-button,.buy-now{
     background-color: var(--colorDarkGray);
     padding: 0.5rem 2rem;
     border-radius: 5rem;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 .total-price {
@@ -64,6 +64,7 @@ button.modify-button,.buy-now{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
 
 }
 
@@ -90,15 +91,27 @@ a i{
 }
 
 th, td{
-    padding: 0.1rem 7rem;
+    padding: 0.5rem 2rem;
     font-size: 2rem;
 }
 
 th{
-    padding: ;
+    padding: 0;
 }
 
 td img{
     width: 7rem;
     height: 7rem;
+}
+
+/*input.checkbox{
+    size: 4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.2;
+}*/
+input#selectedProduct{
+    width: 3rem;
+    height: 3rem;
+    accent-color: var(--colorOrange);
 }

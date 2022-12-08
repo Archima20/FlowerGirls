@@ -1,0 +1,39 @@
+/* (min-width:769px)*/
+
+@media only screen and (min-width: 992px){
+
+
+
+navbar{
+  display: flex;
+  width: auto;
+}
+
+section.carnivor{
+   width: auto;
+}
+
+div.details{
+  margin: 0;
+  width: auto;
+  box-sizing: content-box;
+}   
+
+
+button.quantity-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    margin: 0 0;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox{
+    size: 4rem;
+}
+
+
+}
