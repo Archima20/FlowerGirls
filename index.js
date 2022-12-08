@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   })
   
   const templateshoppingcart = document.getElementById("templateShoppingCart").content;
+  const items = document.getElementById('items');
   const fragment = document.createDocumentFragment();
   
   const printShoppingCart = () => {
@@ -75,10 +76,9 @@ document.addEventListener('DOMContentLoaded', ( )=> {
 
       const deletebuttons = document.querySelectorAll('.selectedProduct');
       console.log(deletebuttons);
-        Array.from(deletebuttons).forEach((button) => {
+        deletebuttons.forEach((button) => {
           button.addEventListener("click", (e) => { 
-            const id = e.currentTarget.dataset.item;
-              delete shoppingCart[id];      
+              delete shoppingCart[e.currentTarget.dataset.item];      
           printShoppingCart();
         })
       })
