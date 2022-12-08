@@ -81,10 +81,6 @@ a i{
     
 }
 
-.continer{
-    height: 60%;
-
-}
 
 th, td{
     padding: 0.1rem 7rem;
@@ -97,7 +93,15 @@ td img{
 }
 
 
-   table {
-    overflow: auto;
-    height: 2rem;
-   }
+tbody{
+    overflow: scroll;
+    height: 1rem;
+}
+
+.selectedProduct{
+    border-radius:20%;
+    font-size: 1.5rem;
+    color: var(--colorOrange);
+    background-color: var(--colorWhite);
+    box-shadow: none;
+}

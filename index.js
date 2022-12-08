@@ -52,21 +52,36 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   })
   
   const templateshoppingcart = document.getElementById("templateShoppingCart").content;
+  const items = document.getElementById('items');
   const fragment = document.createDocumentFragment();
   
   const printShoppingCart = () => {
+    items.innerHTML = '';
       Object.values(shoppingCart).forEach(product =>{
-          templateshoppingcart.querySelector('#selectedProduct').value = product.value;
+          templateshoppingcart.querySelector('.selectedProduct').setAttribute("data-item", product.id)
+          templateshoppingcart.querySelector('.selectedProduct').dataset.item = product.id;
           templateshoppingcart.querySelector('img').src = product.image;
           templateshoppingcart.querySelector('p').textContent = product.productName;
           templateshoppingcart.querySelector('span').textContent = product.productPrice;
           templateshoppingcart.querySelector('.btn-substract').dataset.type = product.type;
           templateshoppingcart.querySelector('input').value = product.productQuantity;
           templateshoppingcart.querySelector('.btn-add').dataset.type = product.type;
+
+          
+
           const clone = templateshoppingcart.cloneNode(true);
           fragment.appendChild(clone);
       })  
       items.appendChild(fragment);
+
+      const deletebuttons = document.querySelectorAll('.selectedProduct');
+      console.log(deletebuttons);
+        deletebuttons.forEach((button) => {
+          button.addEventListener("click", (e) => { 
+              delete shoppingCart[e.currentTarget.dataset.item];      
+          printShoppingCart();
+        })
+      })
   
   const  totalQuantity = Object.values(shoppingCart).reduce((acc, {productQuantity}) => acc + productQuantity, 0)
 
@@ -76,14 +91,19 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   const total = document.querySelector(".total-price")
     
   total.innerHTML = `${totalPrice}`
+}
   
   const emptyCartButton = document.querySelector(".empty-car");
-  console.log(emptyCartButton);
   emptyCartButton.addEventListener("click", () => {
     shoppingCart = {};
     sessionStorage.clear();
-    fetch();
-
-
+    console.log(shoppingCart);
+    printShoppingCart();
   });
-}
+  
+  
+  
+
+
+  
+

@@ -46,8 +46,7 @@
         </section>
         <section>
             <h3 class="shopping-car-headings">Mis Compras</h3>
-            <div class="continer">
-                <table>
+                <table class="continer">
                     <thead>
                  <tr>
                     <th></th>
@@ -60,12 +59,10 @@
                  
                 </table>
 
-            </div>
-
             <template id="templateShoppingCart">
                 <tr>
                     <td>
-                        <input type="checkbox" name="selected_product" id="selectedProduct" value="selectedProduct">
+                        <button type="button"  class="selectedProduct"><i class="fa-solid fa-trash"></i></button>
                     </td>
                     <td>
                         <img src="./src/images/sarracenia.jpg" alt="Flor carnivora de nombre Sarracenia">
@@ -98,7 +95,7 @@
 
     <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
     <script src="./index.js"> </script>
-    <script src="./src/js/shopping_cart.js"></script>
+    <!--<script src="./src/js/shopping_cart.js"></script>-->
 
 </body>
 </html>
