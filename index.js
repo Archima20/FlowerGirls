@@ -57,17 +57,31 @@ document.addEventListener('DOMContentLoaded', ( )=> {
   const printShoppingCart = () => {
     items.innerHTML = '';
       Object.values(shoppingCart).forEach(product =>{
-          templateshoppingcart.querySelector('#selectedProduct').value = product.value;
+          templateshoppingcart.querySelector('.selectedProduct').setAttribute("data-item", product.id)
+          templateshoppingcart.querySelector('.selectedProduct').dataset.item = product.id;
           templateshoppingcart.querySelector('img').src = product.image;
           templateshoppingcart.querySelector('p').textContent = product.productName;
           templateshoppingcart.querySelector('span').textContent = product.productPrice;
           templateshoppingcart.querySelector('.btn-substract').dataset.type = product.type;
           templateshoppingcart.querySelector('input').value = product.productQuantity;
           templateshoppingcart.querySelector('.btn-add').dataset.type = product.type;
+
+          
+
           const clone = templateshoppingcart.cloneNode(true);
           fragment.appendChild(clone);
       })  
       items.appendChild(fragment);
+
+      const deletebuttons = document.querySelectorAll('.selectedProduct');
+      console.log(deletebuttons);
+        Array.from(deletebuttons).forEach((button) => {
+          button.addEventListener("click", (e) => { 
+            const id = e.currentTarget.dataset.item;
+              delete shoppingCart[id];      
+          printShoppingCart();
+        })
+      })
   
   const  totalQuantity = Object.values(shoppingCart).reduce((acc, {productQuantity}) => acc + productQuantity, 0)
 
@@ -80,7 +94,6 @@ document.addEventListener('DOMContentLoaded', ( )=> {
 }
   
   const emptyCartButton = document.querySelector(".empty-car");
-  console.log(emptyCartButton);
   emptyCartButton.addEventListener("click", () => {
     shoppingCart = {};
     sessionStorage.clear();
@@ -88,25 +101,9 @@ document.addEventListener('DOMContentLoaded', ( )=> {
     printShoppingCart();
   });
   
-  const deleteItem = document.querySelector("#selectedProduct");
-  deleteItem.addEventListener("click", (e) => { 
-    const id = e.target.dataset.item;
-    shoppingCart= Object.value(shoppingCart).filter((shoppingcartId) =>{
-      return  shoppingcartId !== id;
-    });
-    printShoppingCart();
-  })
+  
   
 
 
-  /*function borrarItemCarrito(evento) {
-    // Obtenemos el producto ID que hay en el boton pulsado
-    const id = evento.target.dataset.item;
-    // Borramos todos los productos
-    carrito = carrito.filter((carritoId) => {
-        return carritoId !== id;
-    });
-    // volvemos a renderizar
-    renderizarCarrito();
-}*/
+  
 

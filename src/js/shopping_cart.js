@@ -11,6 +11,7 @@ const fragment = document.createDocumentFragment();
 
 const printShoppingCart = () => {
     Object.values(shoppingCart).forEach(product =>{
+        templateshoppingcart.querySelector('#selectedProduct').setAttribute("data-item", product.id)
         templateshoppingcart.querySelector('#selectedProduct').value = product.value;
         templateshoppingcart.querySelector('img').src = product.image;
         templateshoppingcart.querySelector('p').textContent = product.productName;
