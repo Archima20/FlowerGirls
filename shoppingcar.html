@@ -33,21 +33,20 @@
             </div>
             <h3 class="shopping-car-headings">Dirección de Entrega</h3>
             <div class="box-background">
-                 <p class="user-address">calle nombre de calle, 123, España, Barcelona, 08000</p>
-                 <button type="button" class="modify-button">Modificar</button>
+                <p class="user-address">calle nombre de calle, 123, España, Barcelona, 08000</p>
+                <button type="button" class="modify-button">Modificar</button>
             </div>
             <h3 class="shopping-car-headings">Método de Pago</h3>
             <form class="payment-form box-background">
-                 <label for="card" ><input type="radio" id="card" name="paymentType" value="card"> <img class="payment-img" src="./src/images/tarjetas.png" alt="Muchas tarjetas bancarias">Pagar con tarjeta</label>
-                 <label for="bizum"><input type="radio" id="bizum" name="paymentType" value="bizum"> <img class="payment-img" src="./src/images/bizum.png" alt="texto bizum"> Pagar con Bizum</label>
-                 <label for="paypal"><input type="radio" id="paypal" name="paymentType" value="paypal"> <img class="payment-img" src="./src/images/paypal_logo.png" alt="texto paypal"> Pagar con Paypal</label>
+                <label for="card"><input type="radio" id="card" name="paymentType" value="card"> <img class="payment-img" src="./src/images/tarjetas.png" alt="Muchas tarjetas bancarias">Pagar con tarjeta</label>
+                <label for="bizum"><input type="radio" id="bizum" name="paymentType" value="bizum"> <img class="payment-img" src="./src/images/bizum.png" alt="texto bizum"> Pagar con Bizum</label>
+                <label for="paypal"><input type="radio" id="paypal" name="paymentType" value="paypal"> <img class="payment-img" src="./src/images/paypal_logo.png" alt="texto paypal"> Pagar con Paypal</label>
             </form>
             <a class= "keep-buying" href="./index.html"><i class="fa-solid fa-arrow-left"></i> Seguir Comprando</a>
         </section>
         <section>
             <h3 class="shopping-car-headings">Mis Compras</h3>
-            <div class="continer">
-                <table>
+                <table class="continer">
                     <thead>
                  <tr>
                     <th></th>
@@ -60,12 +59,10 @@
                  
                 </table>
 
-            </div>
-
             <template id="templateShoppingCart">
                 <tr>
-                    <td  class="checkbox">
-                        <input type="checkbox" name="selected_product" id="selectedProduct" value="selectedProduct">
+                    <td>
+                        <button type="button"  class="selectedProduct"><i class="fa-solid fa-trash"></i></button>
                     </td>
                     <td>
                         <img src="./src/images/sarracenia.jpg" alt="Flor carnivora de nombre Sarracenia">
@@ -79,7 +76,6 @@
                     </td>
                 </tr>
                 
-
             </template>
 
 
@@ -98,6 +94,8 @@
     </main>
 
     <script src="https://kit.fontawesome.com/477bce35d4.js" crossorigin="anonymous"></script>
-    <script src="./src/js/shopping_cart.js"></script>
+    <script src="./index.js"> </script>
+    <!--<script src="./src/js/shopping_cart.js"></script>-->
+
 </body>
 </html>
