@@ -1,10 +1,6 @@
-/* (min-width:769px)*/
+@media screen and (min-width: 992px){
 
-@media only screen and (min-width: 992px){
-
-
-
-navbar{
+.navbar{
   display: flex;
   width: auto;
 }
@@ -19,7 +15,6 @@ div.details{
   box-sizing: content-box;
 }   
 
-
 button.quantity-buttons{
     display: flex;
     flex-direction: row;
@@ -31,9 +26,9 @@ button.quantity-buttons{
     margin: 0;
 }
 
-.checkbox{
-    size: 4rem;
+button:hover {
+  background: var(--colorPaleOrange);
+  color: var(--colorBlack);
 }
-
 
 }

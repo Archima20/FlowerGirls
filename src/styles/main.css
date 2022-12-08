@@ -51,11 +51,6 @@ button {
     font-size: 1rem;
 }
 
-button:hover {
-    background: var(--colorPaleOrange);
-    color: var(--colorBlack);
-}
-
 
 .quantity-buttons {
     background-color: var(--colorPaleGray);
