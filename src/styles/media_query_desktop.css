@@ -1,4 +1,8 @@
 @media screen and (min-width: 992px){
+.logo a{
+    text-decoration: none;
+    color: var(--colorBlack);
+}
 
 .navbar{
   display: flex;
