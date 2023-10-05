@@ -31,16 +31,16 @@ En nuestra página web el usuario podrá visualizar todos los productos que exis
 * [GitHub](https://github.com/Archima20/FlowerGirls)
 * Visual Studio Code
 
-## :tv:Demo
+## :tv: Demo
 
 * [Demo](http://127.0.0.1:5500/index.html)
 
-## :loop:Prototipo
+## :loop: Prototipo
 
 * [Escritorio](https://www.figma.com/proto/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=25%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A3)
 * [Movil](https://www.figma.com/proto/mOLeg75uR73SdJnhOnZX0f/FlowerGirls?node-id=75%3A142&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A3)
 
-## :minidisc:Instalación
+## :minidisc: Instalación
 
 * [GitHub](https://github.com/Archima20/FlowerGirls)
 
